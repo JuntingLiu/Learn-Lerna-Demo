@@ -5,13 +5,13 @@
   "author": "Junting <342766475@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/common.js",
+  "main": "src/common.ts",
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "registry": "https://registry.npm.taobao.org/"

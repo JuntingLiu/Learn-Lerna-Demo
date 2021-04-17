@@ -101,3 +101,11 @@ lerna bootstrap --hoist
     "mobile": "lerna exec --scope mobile-component yarn dev"
   },
 ```
+
+### 引用公共库中的函数
+
+```shell
+lerna add common --scope=web-component
+```
+
+执行完后，在 `web-component` 项目下的 `package.json` 就会出现`common`依赖，已被成功引入。就可以在 `web-component` 库中尽情使用了。

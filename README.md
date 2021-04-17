@@ -109,3 +109,15 @@ lerna add common --scope=web-component
 ```
 
 执行完后，在 `web-component` 项目下的 `package.json` 就会出现`common`依赖，已被成功引入。就可以在 `web-component` 库中尽情使用了。
+
+### 发布
+
+项目结构基本搭建完成，就可以尝试发布下：
+
+```shell
+lerna publish
+```
+
+在 `package.json` 文件中配置 `"version": "independent",` 此参数，不同模块不同版本，执行命令后就会出现，针对 `packages` 中的每个模块单独选择版本进行发布。
+
+> 注意，采用不同模块不同版本的方式进行管理，`packages` 内部的包有相互依赖时, 每次发布之后记得修改发布后的版本号，否则本地调试时会出现刚发布的代码不生效的问题。

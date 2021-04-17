@@ -1,6 +1,7 @@
 {
   "name": "root",
   "private": true,
+  "version": "independent",
   "scripts": {
     "web": "lerna exec --scope web-component yarn start",
     "mobile": "lerna exec --scope mobile-component yarn dev"
